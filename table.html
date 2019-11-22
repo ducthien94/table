@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="UTF-8">
+	<title>Danh sách học viên lớp Web Frontend tháng 5/2019</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+	<div class="container mx-auto">
+		<div id="logo">
+			<img src="https://techmaster.vn/resources/image/new_logo.png" alt="">
+
+			<div id="box-search">
+				<input type="search" id="search" placeholder="Search...">
+				<i class="fas fa-search"></i>
+			</div>
+		</div>
+		<h1>Danh sách học viên lớp Web Front-end</h1>
+
+		<div class="btn-add">
+			<button type="button" class="btn btn-primary btn-addStudent" data-toggle="modal" data-target=".bd-example-modal-lg">+ Thêm học viên</button>
+			<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+			  <div class="modal-dialog modal-lg">
+			    <div class="modal-content">
+			    	<h4>Thông tin học viên</h4>
+			     	<form class="form-add">
+				     	<input type="text" id="name" placeholder="Họ tên học viên"> <br>
+				     	<input type="text" id="gender" placeholder="Giới tính"> <br>
+				     	<input type="date" id="birthday"> <br>
+				     	<input type="text" id="homeTown" placeholder="Quê quán"> <br>
+				     	<input type="submit" id="submit" value="Xác nhận">
+			     	</form>
+			    </div>
+			  </div>
+			</div>
+		</div>
+
+		<table>
+			<thead>
+				<tr>
+					<th class="normal" data-sort="name">Tên học viên</th>
+					<th class="normal" data-sort="gender">Giới tính</th>
+					<th class="normal" data-sort="birthday">Ngày sinh</th>
+					<th class="normal" data-sort="gender">Quê quán</th>
+					<th></th>
+				</tr>
+			</thead>
+			
+			<tbody>
+				
+			</tbody>	
+		</table>
+		<p id="no_result"></p>
+
+		
+
+	</div>
+		
+
+
+<script src="https://kit.fontawesome.com/c2224d8649.js"></script>
+<!-- Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="js/jquery-3.4.1.js"></script>
+<script src="js/table.js"></script>
+
+
+<script>
+	$.ajax({
+		url: 'http://localhost:3000/students',
+		type: 'GET',
+		dataType: 'json'
+	})
+
+
+	// function removeStudent() {
+	// 	$.ajax({
+	// 		url: 'http://localhost:3000/students/zEK8Jdl',
+	// 		type: 'DELETE',
+	// 		dataType: 'json',
+	// 	})
+	// 	.done(function() {
+	// 		console.log("success");
+	// 	})
+	// 	.fail(function() {
+	// 		console.log("error");
+	// 	})
+	// 	.always(function() {
+	// 		console.log("complete");
+	// 	});
+	// }
+
+
+	// function addStudent() {
+	// 	$.ajax({
+	// 		url: 'http://localhost:3000/students',
+	// 		type: 'POST',
+	// 		dataType: 'json',
+	// 		data: {
+	// 			name: "Nguyen Duy Vuong",
+	// 			gender: "nam",
+	// 			birthday: "1997-09-12",
+	// 			homeTown: "Hung Yen",
+	// 		}
+	// 	})
+	// 	.done(function() {
+	// 		console.log("success");
+	// 	})
+	// 	.fail(function() {
+	// 		console.log("error");
+	// 	})
+	// 	.always(function() {
+	// 		console.log("complete");
+	// 	});
+	// }
+
+	function edit() {
+		$.ajax({
+			url: 'http://localhost:3000/students/eDpDGcm',
+			type: 'PATCH',
+			dataType: 'json',
+			data: {
+				name: "Nguyễn Duy Vương",
+				gender: "Nam",
+				birthday: "1997-09-12",
+				homeTown: "Hưng Yên",
+			}
+		})
+		.done(function() {
+			console.log("success");
+		})
+		.fail(function() {
+			console.log("error");
+		})
+		.always(function() {
+			console.log("complete");
+		});
+	}
+
+	
+
+</script>
+
+</body>
+</html>

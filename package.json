@@ -1,0 +1,11 @@
+{
+  "name": "heroku",
+  "version": "1.0.0",
+  "description": "testing heroku, testing AJAX HTTP request",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "json-server": "^0.14.2"
+  }
+}

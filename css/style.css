@@ -1,0 +1,231 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	margin: 0 auto;
+	background-image: url('https://cdn.wonderfulengineering.com/wp-content/uploads/2016/02/blue-wallpaper-22.jpg');
+	background-size: cover;
+}
+
+#logo {
+	position: relative;
+	background-color: #3c78e8;
+	height: 100px;
+}
+
+#logo img {
+	margin: auto;
+	display: block;
+	padding-top: 20px;
+}
+
+#box-search {
+	position: absolute;
+	margin-bottom: 20px;
+	top: 0;
+	right: 0;
+	margin-right: 20px;
+}
+
+#box-search i {
+	position: absolute;
+	left: 7px;
+    top: 44px;
+    color: #aaa;
+}
+
+#search {
+	width: 200px;
+	height: 20px;
+	border-radius: 15px;
+	outline: none;
+	display: block;
+	margin: 30px auto;
+	padding: 20px 20px 20px 25px;
+	font-size: 18px;
+	border: 2px solid #f2f2f2;
+}
+
+.btn-add {
+	width: 100%;
+	text-align: right;
+}
+
+/* Code mới */
+.modal-content h4 {
+	text-align: center;
+	padding-top: 20px;
+}
+
+.modal-content .form-add {
+	text-align: center;
+	padding: 10px 20px;
+}
+
+.modal-content .form-add input {
+	width: 350px;
+	margin-top: 15px;
+	padding: 5px 10px;
+}
+
+.modal-content .form-add #submit {
+	width: 100px;
+	display: block;
+	margin: 15px auto;
+}
+
+/*.remove, .edit {
+	border: 1px solid;
+	padding: 3px 5px;
+	text-align: center;
+	cursor: pointer;
+	margin-right: 5px;
+	display: inline-block;
+}
+
+.remove:hover {
+	background: tomato;
+	color: #fff;
+}
+
+.edit:hover {
+	background: lightblue;
+	color: #fff;
+}*/
+
+.modal .form-edit label {
+	width: 120px;
+}
+
+.modal .form-edit input {
+	width: 300px;
+	padding: 5px 10px;
+	margin-top: 15px;
+}
+
+
+
+
+/* Code mới */
+
+button {
+	padding: 5px 10px;
+}
+
+table {
+	border-collapse: collapse;
+	margin: 20px auto;
+}
+
+h1 {
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	font-size: 1.5em;
+	text-align: center;
+	margin-top: 20px;
+}
+
+th,  td {
+	padding: 10px;
+	width: 22%;
+	height: auto;
+}
+
+
+th {
+	border-right: 1px solid white;
+	border-bottom: 1px solid white;
+	position: relative;
+	cursor: pointer;
+}
+
+span {
+	position: absolute;
+	right: 10px;
+}
+
+th:last-child, tr td:last-child {
+	border-right: none;
+}
+
+td {
+	border-top: 1px solid white;
+	border-right: 1px solid white;
+	border-bottom: 1px solid white;
+}
+
+th:first-child  { 
+	border-top-left-radius: 10px;
+	position: relative;
+}
+th:last-child {
+	border-top-right-radius: 10px;
+}
+
+tr:nth-child(odd) {
+	background-color:  #f2f2f2 ;
+}
+
+
+thead th {
+	background-color:  #0066ff;
+	color: white;
+	text-align: center;
+}
+
+thead th:hover {
+	background-color:  #0066ff;
+	color: white;
+}
+
+tr:nth-child(even) {
+	background-color: #d7d7d1;
+}
+
+
+tbody tr:hover {
+  background-color: #99c2ff;
+}
+
+tr td:nth-child(2), tr td:nth-child(3) {
+	text-align: center;
+}
+
+/*th.ascending::after {
+	content: '\f0dd';
+  	font-family: 'Font Awesome 5 Free';
+  	font-weight: 900;
+  	float: right;
+  	padding-right: 5px;
+  	font-size: 12px;
+  	line-height: 18px;
+}
+
+th.descending::after {
+	content: '\f0de';
+  	font-family: 'Font Awesome 5 Free';
+  	font-weight: 900;
+  	float: right;
+  	padding-right: 5px;
+  	font-size: 12px;
+  	line-height: 18px;
+}
+
+th.normal::after {
+	content: '\f0dc';
+  	font-family: 'Font Awesome 5 Free';
+  	font-weight: 900;
+  	float: right;
+  	padding-right: 5px;
+  	font-size: 12px;
+  	line-height: 18px;
+}*/
+
+#no_result {
+	text-align: center;
+}

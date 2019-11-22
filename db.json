@@ -1,0 +1,32 @@
+{
+  "students": [
+    {
+      "id": "1",
+      "name": "Đỗ Duy Anh",
+      "gender": "Nam",
+      "birthday": "1999-10-19",
+      "homeTown": "Thái Nguyên"
+    },
+    {
+      "name": "Nguyễn Duy Vương",
+      "gender": "Nam",
+      "birthday": "1997-09-12",
+      "homeTown": "Hưng Yên",
+      "id": "eDpDGcm"
+    },
+    {
+      "name": "Cấn Văn Hưng",
+      "gender": "Nam",
+      "birthday": "1999-09-05",
+      "homeTown": "Hà Nội",
+      "id": "5"
+    },
+    {
+      "name": "Đoàn Trà My",
+      "gender": "Nữ",
+      "birthday": "1999-09-21",
+      "homeTown": "Hà Nội",
+      "id": "6"
+    }
+  ]
+}
